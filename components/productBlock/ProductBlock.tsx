@@ -7,7 +7,7 @@ interface ProductBlockI {
   title: string;
   smallDescription: string;
   price: number;
-  image?: string;
+  image?: any;
 }
 const ProductBlock: React.FC<ProductBlockI> = ({
   price,
@@ -17,11 +17,13 @@ const ProductBlock: React.FC<ProductBlockI> = ({
 }) => {
   return (
     <article className={styles.productBlock}>
-      {/*<Image src={image} />*/}
+      <div className={styles.productBlock__img}>
+        <Image src={image} height={"400px"} />
+      </div>
       <header className={styles.productBlock__title}>{title}</header>
-      <p>{smallDescription}</p>
-      <span>{price} USD</span>
-      <Button text={"Buy now"} />
+      <p className={styles.productBlock__description}>{smallDescription}</p>
+      <span className={styles.productBlock__price}>{price} USD</span>
+      <Button position={"right"} text={"Buy now"} />
     </article>
   );
 };

@@ -1,8 +1,16 @@
 .button{
 
 }
+.right{
+  margin: 0px 0px 0px auto;
+  display: block;
+  position: absolute;
+  right: 10px;
+  bottom:10px
+}
 
-.greenBtn{
+
+.green{
   font-family: Poppins;
   background: #6A983C;
 
@@ -12,5 +20,17 @@
   color: #eaeaea;
   padding: 6px 12px;
   font-weight: 700;
+  cursor: pointer;
+}
+.grey{
+
+  background: #F5F5F5;
+  border-radius: 8px;
+  align-items: center;
+  padding: 12px 25px;
+  border: none;
+  font-family: Poppins;
+  font-weight: 900;
+  font-size: 15px;
   cursor: pointer;
 }

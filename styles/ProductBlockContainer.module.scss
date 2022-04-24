@@ -1,0 +1,19 @@
+@import './index.module';
+.productBlockContainer{
+  @include commonMargin;
+  margin-top: 70px !important;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+&__products{
+  display: flex;
+
+
+}
+  &__product{
+    margin: auto;
+    &+&{
+      //margin-left: 30px;
+    }
+  }
+}

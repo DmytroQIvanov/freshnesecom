@@ -8,6 +8,8 @@ import { useRouter } from "next/router";
 import NavigationBar from "../components/navigationBar/NavigationBar";
 import ProductBlock from "../components/productBlock/ProductBlock";
 import CustomersSays from "../components/customersSays/CustomersSays";
+import image from "../public/Bread.jpg";
+import ProductBlockContainer from "../components/ProductBlockContainer/ProductBlockContainer";
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -24,12 +26,7 @@ const Home: NextPage = () => {
         <Header />
         <NavigationBar />
         <main>
-          <ProductBlock
-            title={"Pizza"}
-            smallDescription={"smthsmtj"}
-            price={300}
-            // image={null}
-          />
+          <ProductBlockContainer />
           <CustomersSays />
         </main>
         {/*<main className={styles.main}>*/}

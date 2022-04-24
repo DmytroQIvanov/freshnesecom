@@ -1,0 +1,23 @@
+.asideLinks{
+  &__categoryName{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__link{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #6A983C;
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+  }
+  &__button{
+    margin-top: 50px;
+  }
+}
