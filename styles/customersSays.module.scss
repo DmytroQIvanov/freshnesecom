@@ -1,0 +1,77 @@
+@import './index.module';
+//@use './index.module';
+
+
+.customersSays{
+  font-family: Poppins;
+
+  &__title{
+    margin: 70px 45px 40px 45px;
+  }
+
+  &__container{
+    position: relative;
+    margin: 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    min-height: 340px;
+    //box-shadow: 0 0 10px black inset;
+    //box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8) inset;
+    //box-shadow: 16px -19px 10px -4px rgba(208, 208, 208, 0.76) inset;
+    //box-shadow: 16px 0 4px -4px #999,
+    //-16px 0 4px -4px #999 inset;
+    //box-shadow: 6px 0 4px -4px #999, -6px 0 4px -4px #999 inset;
+
+    &::-webkit-scrollbar {
+      width: 0em;
+    }
+    &Block{
+      display: block;
+      position: relative;
+
+      border: 1px solid #F1F1F1;
+      box-sizing: border-box;
+      border-radius: 12px;
+      min-width: 350px;
+      min-height: 240px;
+      height: 240px;
+      &+&{
+        margin-left: 32px;
+      }
+      &:first-child{
+        margin-left: 45px;
+      }
+      &:last-child{
+        margin-right: 45px;
+      }
+      &Description{
+
+        font-weight: 700;
+        font-size: 15px;
+        text-align: center;
+        margin: 24px 32px 24px 32px;
+      }
+      &Name{
+
+        font-weight: 600;
+        font-size: 15px;
+        color: #A9A9A9;
+        margin: auto;
+        text-align: center;
+      }
+      &Avatar{
+        position: absolute;
+        top:240px;
+        left: 50%;
+        display:flex;
+        transform: translate(-50%,-50%);
+        img{
+          border-radius: 50%;
+          object-fit: cover;
+        }
+       }
+    }
+  }
+
+}

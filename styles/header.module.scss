@@ -1,0 +1,62 @@
+$green : #6A983C;
+
+.header{
+  height: 178px;
+  background: #FFFFFF;
+  padding: 0 2rem;
+
+  &_nav{
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.05);
+    position: relative;
+    display: flex;
+    &Left{
+      display: flex;
+    }
+    &Right{
+      margin-left: auto;
+      color: $green;
+      display: flex;
+    }
+
+    span{
+      cursor: pointer;
+      display: block;
+      transition-duration: .1s;
+      &:hover{
+        color: green;
+        transform: scale(1.01);
+      }
+    }
+    &Green{
+      color: $green;
+    }
+    span + span{
+      margin-left: 33px;
+    }
+
+  }
+  &_main{
+    height: 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    &Title{
+      display: flex;
+      margin: auto 0px ;
+      font-weight: 900;
+      font-size: 26px;
+      font-family: 'Poppins';
+      color: #151515;
+    }
+    &Right{
+      display: flex;
+      margin: auto 0 auto auto;
+
+      div{
+        margin: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

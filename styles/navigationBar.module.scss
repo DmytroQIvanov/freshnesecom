@@ -1,0 +1,53 @@
+.navigationBar{
+  padding: 0px 33px;
+  background-color: #F9F9F9;
+  height: 55px;
+  width: 100%;
+  display: flex;
+  &_elem{
+    //height: 100%;
+    margin: auto 0;
+    font-weight: 700;
+    font-family: 'Poppins';
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: .3s;
+    transform: translateY(0px);
+    position: relative;
+    &:hover{
+      ul{
+        transition-duration: .3s;
+        transform: translateY(30px);
+        opacity: 1;
+        visibility: visible;
+        //display: none;
+      }
+    }
+    ul{
+      &:hover{
+          transition-duration: .3s;
+          transform: translateY(30px) !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+      }
+      transition-duration: .4s;
+      margin: 0;
+      padding: 10px 20px 10px 10px;
+      left: 0px;
+      top:0px;
+      background-color: #F1F1F1;
+
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      li{
+        margin: 5px 0px;
+        list-style: none;
+      }
+    }
+    &+&{
+      margin-left: 54px;
+    }
+  }
+}

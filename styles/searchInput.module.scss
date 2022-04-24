@@ -1,0 +1,104 @@
+.searchInput {
+  position: relative;
+  margin: auto;
+  //background: #151515;
+
+  &Container {
+    background: #f9f9f9;
+    border: 1px solid #b7b7b7;
+    border-radius: 12px;
+    display: flex;
+    width: 500px;
+    height: 42px;
+    font-family: "Poppins" !important;
+    position: relative;
+    z-index: 10;
+    transition-duration: 0.3s;
+
+    &_selectedCategory {
+      padding-right: 24px;
+      border-right: 1px solid #d1d1d1;
+      line-height: 20px;
+      margin: auto 15px;
+      font-size: 14px;
+      font-weight: 800;
+      position: relative;
+      display: flex;
+      cursor: pointer;
+      min-width: 180px;
+      max-width: 220px;
+      transition-duration: 0.3s;
+
+      &_active {
+        img {
+          width: 100px;
+          transform: rotate(180deg);
+        }
+      }
+      &_img {
+        margin-left: 10px;
+        img {
+          transition-duration: 0.3s;
+        }
+      }
+    }
+    input {
+      border: none;
+      background-color: #f9f9f9;
+      &:focus {
+        border: none !important;
+        outline: none;
+      }
+    }
+    &_searchIcon {
+      display: block;
+      margin: 10px 10px auto auto !important;
+      cursor: pointer;
+      width: max-content;
+      height: max-content;
+
+      transition-duration: 0.3s;
+      &:hover {
+        transform: rotate(-25deg) scale(1.1);
+      }
+    }
+  }
+  &_list {
+
+    position: absolute;
+    top: 18px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    //background-color: #ff0000;
+    overflow: hidden;
+    z-index: 0;
+
+    &Hidden {
+
+      transform: translateY(-100%);
+    }
+    ul {
+
+      position: absolute;
+      display: block;
+      left: 0px;
+      top: -20px;
+      background-color: #f9f9f9;
+      z-index: 9;
+      padding: 25px 0 0;
+      border: 1px solid #b7b7b7;
+      border-radius: 12px;
+      transition-duration: 0.3s;
+      li {
+        height: max-content;
+        display: block;
+        margin-left: 10px;
+        padding: 2px;
+        cursor: pointer;
+
+        list-style: none;
+      }
+    }
+  }
+}

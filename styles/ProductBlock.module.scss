@@ -1,0 +1,14 @@
+.productBlock{
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #949494;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  font-family: Poppins;
+  width: 270px;
+  &__title{
+    margin-top: 20px;
+    font-weight: 700;
+
+  }
+}
